@@ -63,7 +63,7 @@ galaxy_info:
   #  - 10
   #  - 6
   #  - 9
-  #- name: MacOSX
+  # - name: MacOSX
   #  versions:
   #  - all
   #  - 10.10
@@ -145,8 +145,8 @@ galaxy_info:
   #  - vivid
   #  - wily
       - xenial
-      - yakkety
-  #  - zesty
+  #  - yakkety
+      - zesty
   - name: Debian
     versions:
   #  - all

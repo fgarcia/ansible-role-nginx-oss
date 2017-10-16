@@ -25,13 +25,13 @@ The following platforms have been tested and are oficially supported:
         - 7
     Debian:
       versions:
-      - jessie
-      - stretch
+        - jessie
+        - stretch
     Ubuntu:
       versions:
-      - trusty
-      - xenial
-      - yakkety
+        - trusty
+        - xenial
+        - zesty
     SUSE/SLES:
       versions:
         - 12
