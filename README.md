@@ -1,6 +1,8 @@
 Ansible NGINX OSS Role
 ======================
 
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-nginxinc.nginx--oss-5bbdbf.svg)](https://galaxy.ansible.com/nginxinc/nginx-oss)
+
 [![Build Status](https://travis-ci.org/nginxinc/ansible-role-nginx-oss.svg?branch=master)](https://travis-ci.org/nginxinc/ansible-role-nginx-oss)
 
 This role installs NGINX OSS on your target host. It supports most CentOS/RHEL/Debian/Ubuntu/SLES distributions.
@@ -8,7 +10,9 @@ This role installs NGINX OSS on your target host. It supports most CentOS/RHEL/D
 Requirements
 ------------
 
-This role was developed using Ansible 2.3.1.0 and as such might not work if a previous version of Ansible is employed.
+This role was developed using Ansible 2.3.1.0. Backwards compatibility is not guaranteed.
+
+Use `ansible-galaxy install nginxinc.nginx-oss` to install the role on your system.
 
 The following platforms have been tested and are oficially supported:
 
@@ -32,6 +36,7 @@ The following platforms have been tested and are oficially supported:
     SUSE/SLES:
       versions:
         - 12
+        - 12SP1
 
 Role Variables
 --------------
@@ -46,32 +51,35 @@ None
 Example Playbook
 ----------------
 
-This is a sample playbook file for deploying NGINX OSS from within an online cloud provider.
+This is a sample playbook file for deploying the Ansible Galaxy NGINX OSS role in a localhost.
 
     ---
     - hosts: localhost
-      remote_user: root
       become: true
       roles:
-        - role: ansible-nginx-oss
+        - role: nginxinc.nginx-oss
 
-This is a sample playbook file for deploying NGINX OSS to a dynamic inventory containing the `nginx` tag.
+This is a sample playbook file for deploying the Ansible Galaxy NGINX OSS role to a dynamic inventory containing the `nginx` tag.
 
     ---
     - hosts: tag_nginx
       remote_user: root
       become: true
       roles:
-        - role: ansible-nginx-plus
+        - role: nginxinc.nginx-oss
+
+To run any of the above sample playbooks create a `setup-nginx.yml` file and paste the contents. Executing the Ansible Playbook is then as simple as executing `ansible-playbook ./setup-nginx.yml`.
+
+Alternatively, you can also clone this repository instead of installing it from Ansible Galaxy. If you decide to do so, replace the role variable in the previous sample playbooks from `nginxinc.nginx-oss` to `ansible-role-nginx-oss`.
 
 License
 -------
 
-Simplified BSD License
+[Simplified BSD License](https://github.com/nginxinc/ansible-role-nginx-oss/blob/master/LICENSE)
 
 Author Information
 ------------------
 
 Alessandro Fael Garcia
 
-**NGINX Inc**
+[NGINX Inc](https://www.nginx.com/)
