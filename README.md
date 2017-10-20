@@ -25,17 +25,18 @@ The following platforms have been tested and are oficially supported:
         - 7
     Debian:
       versions:
+        - wheezy
         - jessie
         - stretch
     Ubuntu:
       versions:
+        - precise
         - trusty
         - xenial
-        - zesty
+        - yakkety
     SUSE/SLES:
       versions:
         - 12
-        - 12SP1
 
 Role Variables
 --------------
