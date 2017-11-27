@@ -13,4 +13,4 @@
   package:
     name: nginx
     state: latest
-  notify: "(All OS) Start Nginx"
+  notify: "(All OS) Start NGINX"
