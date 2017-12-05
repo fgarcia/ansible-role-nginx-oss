@@ -1,12 +1,12 @@
 ---
 # tasks file for ansible-nginx-oss
-- include: pkg-debian.yml
+- import_tasks: pkg-debian.yml
   when: ansible_os_family == "Debian"
 
-- include: pkg-redhat.yml
+- import_tasks: pkg-redhat.yml
   when: ansible_os_family == "RedHat"
 
-- include: pkg-suse.yml
+- import_tasks: pkg-suse.yml
   when: ansible_os_family == "Suse"
 
 - name: "(All OS) Install NGINX OSS"
